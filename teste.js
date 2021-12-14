@@ -28,8 +28,8 @@ function tabela(){
     <td height="19" width="77" style="height:14.5pt;width:58pt">Data</td>\
     <td width="64" style="width:48pt">Subtotal</td>\
     <td width="64" style="width:48pt">Desconto</td>\
-    <td width="64" style="width:48pt">Frete</td>\
-    <td width="64" style="width:48pt">Total</td>\
+    <td width="64" align= "right" style="width:48pt">Frete</td>\
+    <td width="64" align= "right" style="width:48pt">Total</td>\
     </tr>\
     <tr height="19" style="height:14.5pt">\
     <td height="19" class="xl65" align="right" style="height:14.5pt">08/12/2021</td>\
@@ -63,3 +63,4 @@ function tabela(){
     <!--[endif]-->\
     </tbody>'
 }
+export{tabela}
