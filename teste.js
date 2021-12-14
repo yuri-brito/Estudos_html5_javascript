@@ -1,6 +1,5 @@
 function testando(string){
     x=eval(string)
-    console.log(Date())
     return x
 }
 function troca(){
