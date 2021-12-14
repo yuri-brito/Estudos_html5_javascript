@@ -1,5 +1,5 @@
 function testando(string){
-    x=eval(string)
+    var x=eval(string)
     return x
 }
 function troca(){
@@ -9,7 +9,6 @@ function troca(){
     linha2=document.querySelector('body > table > tbody > tr:nth-child(2) > td:nth-child(2)').getInnerHTML()
     document.querySelector('body > table > tbody > tr:nth-child(2) > td:nth-child(1)').innerHTML=linha2
     document.querySelector('body > table > tbody > tr:nth-child(2) > td:nth-child(2)').innerHTML=linha1
-    console.log(tabela.textContent)
 }
 function nova(){
       var span = document.getElementsByTagName('span')[0];
