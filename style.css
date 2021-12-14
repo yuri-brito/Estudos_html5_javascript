@@ -1,11 +1,12 @@
 @charset "UTF-8";
 body{
-    background-image: url(ima.jpg);
+    background-color: burlywood;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
     background-blend-mode:color-burn;
+    opacity: 1;
     font-size: 12pt;
     font-family: Arial, Helvetica, sans-serif;
 }

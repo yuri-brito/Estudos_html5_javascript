@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Microsoft Edge and open the Edge DevTools",
+            "request": "launch",
+            "type": "vscode-edge-devtools.debug",
+            "url": "file:///C:/Users/09884422729/OneDrive/Estudos_html5_javascript/index.html" // Provide your project's url to finish configuring
+        }
+    ]
+}
