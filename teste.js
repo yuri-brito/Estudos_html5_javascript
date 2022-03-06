@@ -3,7 +3,7 @@ function testando(string){
     return x
 }
 function troca(){
-    tabela=document.getElementById("faturamento")
+    tabela=document.getElementById("yuri")
     tabela.getInnerHTML()
     linha1=document.querySelector('body > table > tbody > tr:nth-child(2) > td:nth-child(1)').getInnerHTML()
     linha2=document.querySelector('body > table > tbody > tr:nth-child(2) > td:nth-child(2)').getInnerHTML()
@@ -63,4 +63,3 @@ function tabela(){
     <!--[endif]-->\
     </tbody>'
 }
-export{tabela}
