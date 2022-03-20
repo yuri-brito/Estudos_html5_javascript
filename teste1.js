@@ -1,13 +1,12 @@
 
-var url = "https://sa3.rfoc.srf/php/serv/cad_servidor.php?req=e-Bibliotecas:09884422729&chave=09884422729&dados=matSiapeCad|nomePessoa|nomeCargo";//Sua URL
-
-var xhttp = new XMLHttpRequest();
-xhttp.open("GET", url, true);
-
-xhttp.onreadystatechange = function(){//Função a ser chamada quando a requisição retornar do servidor
-    if ( xhttp.readyState == 4 && xhttp.status == 200 ) {//Verifica se o retorno do servidor deu certo
-        console.log(xhttp.responseText);
-    }
-}
-
-xhttp.send();
+let url_token = " http://127.0.0.1:8000/token/";//Sua URL
+let url = " http://127.0.0.1:8000/catalog/registros/";//Sua URL
+let xhttp = new XMLHttpRequest();
+xhttp.open("POST", url_token, false);
+xhttp.setRequestHeader('Content-Type','application/json')
+xhttp.send(JSON.stringify({'username':'09884422729','password':'Aline18097'}))
+senha=JSON.parse(xhttp.responseText)
+xhttp.open("GET",url,false)
+xhttp.setRequestHeader('Authorization','Bearer '+senha['access'])
+xhttp.send()
+console.log(JSON.parse(xhttp.responseText));
