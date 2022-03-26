@@ -1,58 +1,159 @@
 @charset "UTF-8";
-body{
-    /*background-color: rgba(255,255,255);*/
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 1280px 575px;
-    background-attachment: scroll;
-    background-blend-mode:color-burn;
-    opacity: 1;
-    font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'Frutiger';
+  src: url('Fonts/FrutigerNextLT-Bold.ttf') format('truetype');
 }
-h1{
-    text-align: center;
+body{
+  padding: 10px;
+    /*background-color: rgba(255,255,255);*/
+  background-image: url("Fundo2.png");
+  background-repeat: no-repeat;
+  background-position: 0 0 ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode:color-burn;
+  opacity: 1;
+  font-size: 12pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Content{
+  position: fixed;
+}
+
+h1{color:#172968;
+  font-family: Frutiger ;
+  font-size: 25pt;
+  text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 
 /* Dropdown Button */
-.dropbtn {
-    /*background-color: #4763e0;*/
-    /*color: white;*/
-    padding: 2px;
-    border: none;
+.dropbtn, .dropbtn1,.dropbtn2 {
+  background: rgb(23,41,104);
+  background: linear-gradient(90deg, rgba(23,41,104,1) 0%, rgba(23,41,104,0.8603816526610644) 50%, rgba(225,238,243,0) 100%);
+  padding: 10px;
+  border: 1px solid black;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 9pt;
+  font: Arial;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
   }
   
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+/* The container <div> - needed to position the dropdown content */
+.dropdown, .dropdown1, .dropdown2{
+  position: relative;
+  display: inline-block;
+}
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-    z-index: 1;
-  }
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content, .dropdown-content1 ,.dropdown-content2{
+  display: none;
+  position: relative;
+  background: transparent;
+  border-radius: 10px;
+  min-width: 10px;
+  margin-top: 12%;
+  font-size: 7pt;
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  z-index: 1;
+}
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropbtn:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #0f1455;}
+/* Links inside the dropdown */
+.dropdown-content a , .dropdown-content1 a , .dropdown-content2 a{
+  color: white;
+  border: 1px solid black;
+  background: rgb(23,41,104);
+  background: linear-gradient(90deg, rgba(23,41,104,1) 0%, rgba(23,41,104,0.8603816526610644) 50%, rgba(225,238,243,0) 100%);
+  border-radius: 10px;
+  padding: 10px 14px;
+  text-decoration: none;
+  margin-bottom: 2px;
+  display: block;
+}
 
-td {border: 1px #090913;}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover  {background: transparent;color:#172968;border-radius: 10px;}
+.dropdown-content1 a:hover {background: transparent;color:#172968;border-radius: 10px;}
+.dropdown-content2 a:hover {background: transparent;color:#172968;border-radius: 10px;}
+
+/* Show the dropdown menu on hover */
+.dropbtn:hover .dropdown-content {display: block;}
+
+.dropbtn1:hover .dropdown-content1 {display: block;}
+
+.dropbtn2:hover .dropdown-content2 {display: block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background: transparent;
+  color:#172968;
+
+}
+.dropdown1:hover .dropbtn1 {background: transparent;
+  color:#172968;
+}
+.dropdown2:hover .dropbtn2 {background: transparent;
+  color:#172968;
+}
+
+#titulo0{border: 1px solid black;
+  width:1.5%;
+  text-align: center;}
+#titulo1{border: 1px solid black;
+  width:1.5%;
+  text-align: center;}
+#titulo2{border: 1px solid black;
+  width:45px;
+  text-align: center;}
+#titulo3{border: 1px solid black;
+  width:30px;
+  text-align: center;}
+#titulo4{border: 1px solid black;
+  width:30px;
+  text-align: center;}
+#titulo5{border: 1px solid black;
+  width:45px;
+  text-align: center;}
+
+thead, tbody{
+  display: block;  
+}
+
+tbody{
+  width: 1245px;
+}
+tbody{height: 600px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+
+}
+table{
+  margin-top: 300px;
+  border-collapse: collapse;
+  width: 20%;
+  position: fixed;
+}
+
+table caption {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  width: 1245px;
+  font-weight: bold;
+}
+
+table th,table td {
+  padding: 2px;
+  width:20px;
+  border: 1px solid #090913;
+  text-align: center;
+  white-space: pre-wrap;
+  font-size: 7.8pt;
+}
+table thead {
+  background-color: transparent;
+  color: black;
+  width: 1245px;
+}
